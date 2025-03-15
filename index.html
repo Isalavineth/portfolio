@@ -15,11 +15,24 @@
 	
 </head>
 <body>
+	<canvas id="spline-canvas"></canvas>
+    <script type="module">
+        import { Application } from 'https://cdn.jsdelivr.net/npm/@splinetool/runtime@latest/build/runtime.js';
 
-	<div class = "parent">
-		<iframe src='https://my.spline.design/liquidgradientabstractbackground-419dc38a03d5b7291b72c10f908cfcbf/' frameborder='0' width='100%' height='100%'></iframe>
-	</div>
-	
+        document.addEventListener("DOMContentLoaded", function () {
+            const canvas = document.getElementById('spline-canvas');
+
+            if (!canvas) {
+                console.error("Canvas element not found!");
+                return;
+            }
+
+            const app = new Application(canvas);
+            app.load('https://prod.spline.design/U7jzrEq9YLKdQdbb/scene.splinecode')
+                .then(() => console.log('Spline scene loaded successfully'))
+                .catch(err => console.error('Error loading Spline scene:', err));
+        });
+    </script>
 	<section id = "home">
 	
 		<div class = "typewriter">
