@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio Migration</title>
+  <style>
+    body {
+      background: #0f172a;
+      color: #f8fafc;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      max-width: 600px;
+    }
+
+    .loader {
+      margin-top: 2rem;
+      width: 50px;
+      height: 50px;
+      border: 5px solid #94a3b8;
+      border-top: 5px solid #38bdf8;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>🚧 Portfolio is Migrating to React</h1>
+  <p>Hi there! I'm currently upgrading my portfolio from plain HTML, CSS & JS to a React-based version for a better experience. Please check back soon!</p>
+  <div class="loader"></div>
+</body>
+</html>
